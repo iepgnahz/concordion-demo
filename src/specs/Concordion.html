@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<head>
+
+</head>
+<body>
+<h1>Concordion Specifications</h1>
+<p>We are building specifications for our online order tracking application.</p>
+<div class="example">
+    <h3>Example1 a demo of hello</h3>
+    <p>When  logs in the system, a greeting "<span concordion:assertEquals="getSayHello()">hello world!</span>" is displayed.</p>
+    <h3>Example2 a demo with parameter </h3>
+    <p>the sum of two numbers <span concordion:set="#a">5</span> and <span concordion:set="#b">3</span> will be <span concordion:execute="#result=getSum(#a,#b)"></span><span concordion:assertEquals="#result">8</span></p>
+    <h3>Example3 a demo use assertTrue and assertFalse</h3>
+    <p>my name is <span concordion:set="#name">zhangpei</span><br /> my name is start with <span concordion:assertTrue="#name.startsWith(#letter)"><b concordion:set="#letter">z</b></span></p>
+    <p>my name is not start with <span concordion:assertFalse="#name.startsWith(#letter1)"><b concordion:set="#letter1">p</b></span></p>
+</div>
+</body>
+</html>
